@@ -9,8 +9,15 @@ public class permutation_LC {
 
         for (int i = 0; i < numsize; i++) {
 //            important formula for permutation without using space
-            nums[i] = nums[i] + (numsize*(nums[nums[i]]%numsize));
+//            nums[i] = nums[i] + (numsize*(nums[nums[i]]%numsize));
+
+            nums[i] = nums[nums[i]]% numsize;
+
+//            nums[i] = nums[i] ;
+
+            nums[i] = nums[i] * numsize;
         }
+
         for (int i = 0; i < numsize; i++) {
             nums[i] = nums[i]/numsize;
         }
