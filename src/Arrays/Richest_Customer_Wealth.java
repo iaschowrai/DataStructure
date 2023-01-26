@@ -18,7 +18,7 @@ public class Richest_Customer_Wealth {
          System.out.println(k);
     }
     private static int maxWealth(int[] ans) {
-        int max =0;
+        int max = ans[0];
         for (int i = 0; i < ans.length; i++) {
             if(ans[i] > max){
                 max = ans[i];
