@@ -32,11 +32,13 @@ public class EvenNumberOfDigit {
 
         int count =0;
         for (int i = 0; i < nums.length; i++) {
-            int digit = 0;
-            while( nums[i] > 0){
-                digit++;
-                nums[i]/=10;
-            }
+//            int digit = 0;
+//            while( nums[i] > 0){
+//                digit++;
+//                nums[i]/=10;
+//            }
+            int num = nums[i];
+            int digit = (int)(Math.log10(num))+1;
             if(digit % 2 == 0){
                 count++;
             }
