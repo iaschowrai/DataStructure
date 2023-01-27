@@ -7,7 +7,6 @@ public class Richest_Customer_Wealth {
     }
 
      static void act(int[][] accounts) {
-
         int[] ans = new int[accounts.length];
          for (int i = 0; i < accounts.length; i++) {
              for (int j = 0; j < accounts[i].length; j++) {
@@ -25,8 +24,6 @@ public class Richest_Customer_Wealth {
             }
         }
         return max;
-
     }
-
 
 }
